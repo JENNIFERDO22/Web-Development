@@ -1,0 +1,20 @@
+{"listCreating" : [
+        {
+        "name" : "JSON Widget",
+        "URL" : "api/data/widget.json",
+        "description": "Widget"
+        },
+
+        {
+        "name" : "JSON Web App",
+        "URL" : "api/data/web-app.json",
+        "description": "Web App"
+        },
+
+        {
+        "name" : "JSON Glossary",
+        "URL" : "api/data/glossary.json",
+        "description": "Glossary"
+        }
+    ]
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>API Client Web</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script type = "text/javascript" 
+         src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+    </script>
+    <script src='main.js'></script>
+
+</head>
+<body>
+    <div id='demo'></div>
+
+    <div id='main'>
+        <h1>API Client</h1>
+
+        <div id='create' class='crud-part'>
+            <h2>Create data</h2>
+            <div id='create-message' class='message'></div>
+
+            <div class='input-element'>
+                <label>Name</label><br>
+                <input name='create-name' required>
+            </div>
+
+            <div class='input-element'>
+                <label>URL</label><br>
+                <input name='create-url' required>
+            </div>
+
+            <div class='input-element'>
+                <label>Description</label><br>
+                <input name='create-desc' required>
+            </div>
+
+            <button id='create-btn'>Create</button>
+        </div>
+
+        <div id='retrieve' class='crud-part'>
+            <h2>Retrieve data</h2>
+
+            <button id='show-retrieve-id-btn'>ID</button>
+            <button id='show-retrieve-date-btn'>Date</button>
+            
+            <div id='retrieve-date' class='input-element'>
+                <label>Date</label><br>
+                <input type=text name='retrieve-date' placeholder='yyyy-mm-dd'>
+                <button id='retrieve-date-btn'>Retrieve</button>
+            </div>
+
+            <div id='retrieve-id' class='input-element'>
+                <label>ID</label><br>
+                <input type=text name='retrieve-id' placeholder='Enter an number'>
+                <button id='retrieve-id-btn'>Retrieve</button>
+            </div>
+
+            <div id='retrieve-message' class='message'></div>
+        </div>
+
+        <div id='update' class='crud-part'>
+            <h2>Update data</h2>
+            <div id='update-message' class='message'></div>
+
+            <div class='input-element'>
+                <label>ID</label><br>
+                <input name='update-id' placeholder='Enter ID' required>
+            </div>
+
+            <button id='show-update-name-btn'>Name</button>
+            <button id='show-update-url-btn'>URL</button>
+            <button id='show-update-desc-btn'>Description</button>
+
+            <div id='update-name' class='input-element'>
+                <label>Name</label><br>
+                <input name='update-name' placeholder='Enter new name'>
+                <button id='update-name-btn'>Update</button>
+            </div>
+
+            <div id='update-url' class='input-element'>
+                <label>URL</label><br>
+                <input type=text name='update-url' placeholder='Enter new URL'>
+                <button id='update-url-btn'>Update</button>
+            </div>
+
+            <div id='update-desc' class='input-element'>
+                <label>Description</label><br>
+                <input type=text name='update-desc' placeholder='Enter new description'>
+                <button id='update-desc-btn'>Update</button>
+            </div>
+        </div>
+
+        <div id='update' class='crud-part'>
+            <h2>Delete data</h2>
+            <div id='delete-message' class='message'></div>
+
+            <div class='input-element'>
+                <label>ID</label><br>
+                <input name='delete-id' placeholder='Enter ID to delete' required>
+            </div>
+            <button id='delete-btn'>Delete</button>
+        </div>
+
+        <div id='resource'>
+            <p>Resource: https://www.codeofaninja.com/2017/02/create-simple-rest-api-in-php.html</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

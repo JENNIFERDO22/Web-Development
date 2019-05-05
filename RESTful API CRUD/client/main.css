@@ -1,0 +1,70 @@
+#main {
+    margin-left: 50px;
+}
+
+.input-element {
+    margin: 20px;
+}
+
+.crud-part {
+    border: solid 3px green;
+    width: 50%;
+}
+
+h2 {
+    margin: 20px;
+}
+
+button {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    color: white;
+    background: green;
+    border: solid 1px white;
+    height: 40px;
+}
+
+input {
+    height: 30px;
+    width: 300px;
+}
+
+#retrieve-date-btn, #retrieve-id-btn, #update-name-btn, #update-url-btn, #update-desc-btn {
+    margin-top: 20px;
+    margin-left: 0px;
+}
+
+#retrieve-date, #update-url, #update-desc {
+    display: none;
+}
+
+.message {
+    margin: 20px;
+}
+
+#retrieve-table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+#retrieve-table td, #retrieve-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+  
+#retrieve-table tr:nth-child(even){background-color: #f2f2f2;}
+  
+#retrieve-table tr:hover {background-color: #ddd;}
+
+#retrieve-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+#resource {
+    font-style: italic;
+}
