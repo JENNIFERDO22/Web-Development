@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <title>Hiragana</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index_functions.js"></script>
+</head>
+
+<body>
+
+    <div id='body'>
+    <h1>Hiragana</h1>
+    <h2 id="quiz-message"></h2>
+
+    <div id='submit-form'></div>
+
+    <audio id="audio" src="images/sounds/a.mp3">
+    </audio>
+
+    <button id='change-mode-btn' onclick="change_mode()">Make A Quiz</button>
+    <button id='done-selecting-btn' onclick="create_quiz()">Done selecting</button>
+
+    <form id='hiragana_form' method='post' action='create_quiz.php'>
+    <table cellspacing="20">
+        <tr>
+            <td id="a" class='char'>
+                <img class='char-img' src="images/static_images/a.png">
+                <p class='char-romaji'>a</p>
+            </td>
+            <td id="i" class='char'>
+                <img class='char-img' src="images/static_images/i.png">
+                <p class='char-romaji'>i</p>
+            </td>
+            <td id="u" class='char'>
+                <img class='char-img' src="images/static_images/u.png">
+                <p class='char-romaji'>u</p>
+            </td>
+            <td id="e" class='char'>
+                <img class='char-img' src="images/static_images/e.png">
+                <p class='char-romaji'>e</p>
+            </td>
+            <td id="o" class='char'>
+                <img class='char-img' src="images/static_images/o.png">
+                <p class='char-romaji'>o</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td id="ka" class='char'>
+                <img class='char-img' src="images/static_images/ka.png">
+                <p class='char-romaji'>ka</p>
+            </td>
+            <td id="ki" class='char'>
+                <img class='char-img' src="images/static_images/ki.png">
+                <p class='char-romaji'>ki</p>
+            </td>
+            <td id="ku" class='char'>
+                <img class='char-img' src="images/static_images/ku.png">
+                <p class='char-romaji'>ku</p>
+            </td>
+            <td id="ke" class='char'>
+                <img class='char-img' src="images/static_images/ke.png">
+                <p class='char-romaji'>ke</p>
+            </td>
+            <td id="ko" class='char'>
+                <img class='char-img' src="images/static_images/ko.png">
+                <p class='char-romaji'>ko</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td id="sa" class='char'>
+                <img class='char-img' src="images/static_images/sa.png">
+                <p class='char-romaji'>sa</p>
+            </td>
+            <td id="si" class='char'>
+                <img class='char-img' src="images/static_images/si.png">
+                <p class='char-romaji'>si</p>
+            </td>
+            <td id="su" class='char'>
+                <img class='char-img' src="images/static_images/su.png">
+                <p class='char-romaji'>su</p>
+            </td>
+            <td id="se" class='char'>
+                <img class='char-img' src="images/static_images/se.png">
+                <p class='char-romaji'>se</p>
+            </td>
+            <td id="so" class='char'>
+                <img class='char-img' src="images/static_images/so.png">
+                <p class='char-romaji'>so</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td id="ta" class='char'>
+                <img class='char-img' src="images/static_images/ta.png">
+                <p class='char-romaji'>ta</p>
+            </td>
+            <td id="ti" class='char'>
+                <img class='char-img' src="images/static_images/ti.png">
+                <p class='char-romaji'>ti</p>
+            </td>
+            <td id="tu" class='char'>
+                <img class='char-img' src="images/static_images/tu.png">
+                <p class='char-romaji'>tu</p>
+            </td>
+            <td id="te" class='char'>
+                <img class='char-img' src="images/static_images/te.png">
+                <p class='char-romaji'>te</p>
+            </td>
+            <td id="to" class='char'>
+                <img class='char-img' src="images/static_images/to.png">
+                <p class='char-romaji'>to</p>
+            </td>
+        </tr>
+        
+        <tr>
+            <td id="na" class='char'>
+                <img class='char-img' src="images/static_images/na.png">
+                <p class='char-romaji'>na</p>
+            </td>
+            <td id="ni" class='char'>
+                <img class='char-img' src="images/static_images/ni.png">
+                <p class='char-romaji'>ni</p>
+            </td>
+            <td id="nu" class='char'>
+                <img class='char-img' src="images/static_images/nu.png">
+                <p class='char-romaji'>nu</p>
+            </td>
+            <td id="ne" class='char'>
+                <img class='char-img' src="images/static_images/ne.png">
+                <p class='char-romaji'>ne</p>
+            </td>
+            <td id="no" class='char'>
+                <img class='char-img' src="images/static_images/no.png">
+                <p class='char-romaji'>no</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td id="ha" class='char'>
+                <img class='char-img' src="images/static_images/ha.png">
+                <p class='char-romaji'>ha</p>
+            </td>
+            <td id="hi" class='char'>
+                <img class='char-img' src="images/static_images/hi.png">
+                <p class='char-romaji'>hi</p>
+            </td>
+            <td id="hu" class='char'>
+                <img class='char-img' src="images/static_images/hu.png">
+                <p class='char-romaji'>hu</p>
+            </td>
+            <td id="he" class='char'>
+                <img class='char-img' src="images/static_images/he.png">
+                <p class='char-romaji'>he</p>
+            </td>
+            <td id="ho" class='char'>
+                <img class='char-img' src="images/static_images/ho.png">
+                <p class='char-romaji'>ho</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td id="ma" class='char'>
+                <img class='char-img' src="images/static_images/ma.png">
+                <p class='char-romaji'>ma</p>
+            </td>
+            <td id="mi" class='char'>
+                <img class='char-img' src="images/static_images/mi.png">
+                <p class='char-romaji'>mi</p>
+            </td>
+            <td id="mu" class='char'>
+                <img class='char-img' src="images/static_images/mu.png">
+                <p class='char-romaji'>mu</p>
+            </td>
+            <td id="me" class='char'>
+                <img class='char-img' src="images/static_images/me.png">
+                <p class='char-romaji'>me</p>
+            </td>
+            <td id="mo" class='char'>
+                <img class='char-img' src="images/static_images/mo.png">
+                <p class='char-romaji'>mo</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td id="ya" class='char'>
+                <img class='char-img' src="images/static_images/ya.png">
+                <p class='char-romaji'>ya</p>
+            </td>
+            <td id="wh" class='char'>
+                <img class='char-img' src="images/static_images/white.jpg">
+                <p class='char-romaji'></p>
+            </td>
+            <td id="yu" class='char'>
+                <img class='char-img' src="images/static_images/yu.png">
+                <p class='char-romaji'>yu</p>
+            </td>
+            <td id="wh" class='char'>
+                <img class='char-img' src="images/static_images/white.jpg">
+                <p class='char-romaji'></p>
+            </td>
+            <td id="yo" class='char'>
+                <img class='char-img' src="images/static_images/yo.png">
+                <p class='char-romaji'>yo</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td id="ra" class='char'>
+                <img class='char-img' src="images/static_images/ra.png">
+                <p class='char-romaji'>ra</p>
+            </td>
+            <td id="ri" class='char'>
+                <img class='char-img' src="images/static_images/ri.png">
+                <p class='char-romaji'>ri</p>
+            </td>
+            <td id="ru" class='char'>
+                <img class='char-img' src="images/static_images/ru.png">
+                <p class='char-romaji'>ru</p>
+            </td>
+            <td id="re" class='char'>
+                <img class='char-img' src="images/static_images/re.png">
+                <p class='char-romaji'>re</p>
+            </td>
+            <td id="ro" class='char'>
+                <img class='char-img' src="images/static_images/ro.png">
+                <p class='char-romaji'>ro</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td id="wa" class='char'>
+                <img class='char-img' src="images/static_images/wa.png">
+                <p class='char-romaji'>wa</p>
+            </td>
+            <td id="wi" class='char'>
+                <img class='char-img' src="images/static_images/wi.png">
+                <p class='char-romaji'>wi</p>
+            </td>
+            <td id="wh" class='char'>
+                <img class='char-img' src="images/static_images/white.jpg">
+                <p class='char-romaji'></p>
+            </td>
+            <td id="we" class='char'>
+                <img class='char-img' src="images/static_images/we.png">
+                <p class='char-romaji'>we</p>
+            </td>
+            <td id="wo" class='char'>
+                <img class='char-img' src="images/static_images/wo.png">
+                <p class='char-romaji'>wo</p>
+            </td>
+        </tr>
+            <td id="n" class='char' colspan="5">
+                <img class='char-img' src="images/static_images/n.png">
+                <p class='char-romaji'>n</p>
+            </td>
+        <tr>
+
+        </tr>
+
+    </table>
+    </form>
+
+</div>
+
+<div id="credit">
+    <p>Credit:</p>
+    <p>All photos and strokes are from https://commons.wikimedia.org/wiki/Hiragana</p>
+    <p>All audios are from http://www.guidetojapanese.org/learn/complete/hiragana</p>
+</div>
+    
+</body>
+</html> 

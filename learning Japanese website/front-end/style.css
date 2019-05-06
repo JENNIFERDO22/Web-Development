@@ -1,0 +1,110 @@
+#body {
+    margin: auto 30px;
+}
+
+.char-img {
+    width: 150px;
+}
+
+.char-romaji {
+    margin: 0;
+}
+
+.char {
+    text-align: center;
+    border: 1px solid;
+    box-shadow: 5px 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 50px;
+}
+
+#sound {
+    display: none;
+}
+
+.kana-image {
+    width: 40px;   
+    border: 3px solid black;
+    margin-left: 10px; 
+    margin-top: 10px; 
+}
+
+#create-quiz-btn {
+    display: none;
+}
+
+#quiz-message {
+    border: 2px green solid;
+    padding: 20px;
+    text-align: center;
+    display: none;
+}
+
+#done-selecting-btn {
+    display: none;
+}
+
+.question-title {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+#hiragana-quiz {
+    color: white;
+    font-size: 40px;
+    background: green;
+    text-align: center;
+    margin: auto;
+    padding: 20px 10px;
+}
+
+#result, #after-form {
+    font-size: 30px;
+    border: 5px solid#4CAF50;
+    text-align: left;
+    margin: 30px;
+    padding: 20px 10px;
+    display: none;
+}
+
+#change-mode-btn, #done-selecting-btn, .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 20px;
+    border: none;
+    cursor: pointer;    
+}
+
+#change-mode-btn:hover, #done-selecting-btn:hover, .btn:hover {
+    opacity: 0.8;
+}
+
+.question {
+    margin: 40px;
+}
+
+.answer {
+    margin: 10px;
+}
+
+#login-form, #new-user-form {
+    display: none;
+    margin: 50px;
+    border: 5px solid #4CAF50;
+    padding: 20px;
+    width: 30%;
+}
+
+.cancel-btn {
+    background: red;
+}
+
+.form-input {
+    margin: 10px;
+}
+
+#credit {
+    font-style: italic;
+}
